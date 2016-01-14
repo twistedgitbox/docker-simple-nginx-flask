@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Hello World </title>
+    </head>
+    <body>
+        <h1> Simple Nginx Flask </h1>
+        <h3>Dyanmic content by Flask</h3>
+        <h4> {{ time_string }} </h4>
+        <br>
+        <h3>Static content by nginx</h3>
+        <img src="static/img/helloworld.gif" alt="Test">
+    </body>
+</html>
