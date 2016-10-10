@@ -5,7 +5,7 @@ COPY flask_conf /etc/nginx/sites-enabled/
 #RUN mkdir -p /usr/share/nginx/html/ && sudo chmod 777 /usr/share/nginx/html/
 RUN usermod -u root
 WORKDIR /vagrant/web
-COPY . /static
+COPY /vagrant/web/ /static/web
 #COPY /vagrant/web/. /static
 #RUN sudo cp -r /vagrant/web/. /static
 #COPY /vagrant/web/. /usr/share/nginx/html
