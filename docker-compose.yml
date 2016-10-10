@@ -8,6 +8,8 @@ web:
 nginx:
   restart: always
   build: ./nginx/
+  volumes:
+    - /vagrant:web:/static:ro
   ports:
     - "8000:80"
   links:
